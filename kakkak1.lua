@@ -94,7 +94,7 @@ local SkidFling = function(TargetPlayer)
             repeat
                 if RootPart and THumanoid then
                     if BasePart.Velocity.Magnitude < 50 then
-                        Angle = Angle + 100
+                        Angle = Angle + 99999
 
                         FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle),0 ,0))
                         task.wait()
@@ -147,7 +147,7 @@ local SkidFling = function(TargetPlayer)
                 else
                     break
                 end
-            until BasePart.Velocity.Magnitude > 999999 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
+            until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
         end
         
         workspace.FallenPartsDestroyHeight = 0/0
