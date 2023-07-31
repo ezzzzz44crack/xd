@@ -147,7 +147,7 @@ local SkidFling = function(TargetPlayer)
                 else
                     break
                 end
-            until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
+            until BasePart.Velocity.Magnitude > 350 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
         end
         
         workspace.FallenPartsDestroyHeight = 0/0
